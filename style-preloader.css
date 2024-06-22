@@ -1,6 +1,6 @@
 @font-face {
     font-family: try;
-    src: url("TH3\ MACHINE.ttf");
+    src: url("assets/TH3\ MACHINE.ttf");
 }
 
 * {
@@ -16,7 +16,7 @@ body {
 .cover {
     background-color: black;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ body {
 }
 
 video {
-    opacity: .77;
+    /* opacity: .77; */
     position: absolute;
 }
 
@@ -81,13 +81,14 @@ button:hover {
 }
 
 /* Transition Styles */
-.flip {
+/* .flip {
     transform: rotateY(180deg);
     transition: transform 1s ease;
-}
+} */
 
 .hidden {
-    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 #mainContent {
@@ -98,12 +99,12 @@ button:hover {
     width: 100vw;
     height: 100vh;
     backface-visibility: hidden;
-    transform: rotateY(-180deg);
+    transform: scale(0.9);
     transition: opacity 1s ease, transform 1s ease;
     z-index: 1;
 }
 
 #mainContent.show {
     opacity: 1;
-    transform: rotateY(0deg);
+    transform: scale(1);
 }

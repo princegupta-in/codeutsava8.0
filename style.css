@@ -72,6 +72,9 @@ nav ul li a {
     font-size: 18px;
     font-weight: 400;
 }
+nav ul li a:hover{
+    text-shadow: 0px 12px 5px white;
+}
 
 .logo {
     width: 60px;
@@ -80,7 +83,7 @@ nav ul li a {
 .left {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     padding: 8px 12px
 }
@@ -97,6 +100,9 @@ nav ul li a {
     padding: 6px 6px;
     font-weight: 600;
     box-shadow: inset 0px 0px 20px 8px rgb(31 34 51 / 59%);
+}
+.right button{
+    margin-bottom: 15px;
 }
 .left button:hover {
     background-color:#f3d881
@@ -260,7 +266,6 @@ button:hover {
 }
 
 .l5 a:nth-child(1) .main-right {
-    /* position: relative; */
     background-color: yellowgreen;
     height: 20px;
     width: 20px;
@@ -268,8 +273,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* animation: disco 5s linear 1s infinite; */
-    /* transform: rotateX(90deg); */
+   
 }
 
 .main-right a {
