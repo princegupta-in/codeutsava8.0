@@ -57,7 +57,7 @@ video {
 
 button {
     padding: 5px 90px;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 600;
     font-family: serif;
     border-radius: 10px;
@@ -66,6 +66,7 @@ button {
     margin-top: 20px;
     cursor: pointer;
     border: none;
+    font-family: 'leaf';
 }
 
 button:hover {
