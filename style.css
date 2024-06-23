@@ -50,6 +50,7 @@ nav {
     position: sticky;
     top: 0px;
     z-index: 999;
+    text-align: center;
     /* overflow: auto; */
 
 }
@@ -69,15 +70,25 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 nav ul li a:hover{
     text-shadow: 0px 12px 5px white;
 }
 
-.logo {
+.left-logo .logo {
+    width: 56px;
+    padding: 6px
+}
+.right-logo .logo {
     width: 60px;
+    padding: 3px;
+    margin-top: 6px;
 }
 
 .left {
@@ -99,6 +110,7 @@ nav ul li a:hover{
     border-radius: 4px;
     padding: 6px 6px;
     font-weight: 600;
+    font-size: 12px;
     box-shadow: inset 0px 0px 20px 8px rgb(31 34 51 / 59%);
 }
 .right button{
@@ -309,5 +321,71 @@ button:hover {
 
     to {
         transform: translateY(10px);
+    }
+}
+@media screen and (max-width: 1200px) {
+    nav ul li a{
+        font-size: 13px;
+    }
+    .l2 div:nth-child(3){
+        font-size: 4rem;
+    }
+    .l2 div:nth-child(1){
+        font-size: 4rem;
+    }
+    .l2 img {
+        height: 7em;
+    }
+    .l1 h1{
+        font-size: 4em;
+        margin-top: 35px;
+    }
+    .l3{
+        font-size: 43px;
+    }
+    .l4{
+        font-size: 25px;
+        text-align: center;
+    }
+    nav{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    nav ul{
+        gap: 8px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .left{
+        padding: 2px 6px;
+    }
+    .left-logo .logo {
+        width: 40px;
+        margin-top: 10px;
+    }
+    .right-logo .logo {
+        width: 47px;
+    }
+    .left button{
+        padding: 1px 4px;
+        font-size: 8px;
+    }
+    .left-logo button{
+        margin-bottom: 15px;
+        font-size: 8px;
+    }
+    .main-left img {
+        width: 2rem;
+    }
+}
+@media screen and (max-width:710px){
+    .l5 button{
+        font-size: 15px;
+    }
+    .l5 a img {
+        width: 2rem;
     }
 }
